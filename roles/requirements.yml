@@ -1,0 +1,3 @@
+- src: https://github.com/tower-multicloud-demo/role-azure.git
+  version: master
+  name: role-azure
