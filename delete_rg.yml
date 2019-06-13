@@ -1,0 +1,11 @@
+---
+- name: Delete Azure Resource Group with all resources
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: Delete RG with all resources
+      azure_rm_resourcegroup:
+        name: "{{ rg_name }}"
+        force_delete_nonempty: yes
+        state: absent
