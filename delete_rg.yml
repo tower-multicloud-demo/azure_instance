@@ -7,5 +7,5 @@
     - name: Delete RG with all resources
       azure_rm_resourcegroup:
         name: "{{ rg_name }}"
-        force_delete_nonempty: yes
+        #force_delete_nonempty: yes
         state: absent
